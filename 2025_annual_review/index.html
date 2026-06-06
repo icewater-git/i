@@ -167,12 +167,12 @@
 <p>更新内容💫<br>①特邀嘉宾：子衡💖清禾🧊冰珠儿🫧<br>②本页面目前已被暂时置顶，欢迎大家查看～</p>
 </blockquote>
 
-        <div id="aplayer-mXaZkbgg" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-tChtAaWv" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-mXaZkbgg"),
+            element: document.getElementById("aplayer-tChtAaWv"),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -298,8 +298,8 @@
   const loadWaline = (el, path) => {
     if (initFn) initWaline(initFn, el, path)
     else {
-      btf.getCSS('https://cdn.jsdelivr.net/npm/@waline/client@3.8.0/dist/waline.min.css')
-        .then(() => import('https://cdn.jsdelivr.net/npm/@waline/client@3.8.0/dist/waline.min.js'))
+      btf.getCSS('https://cdn.jsdmirror.com/npm/@waline/client@2/dist/waline.css')
+        .then(() => import('https://cdn.jsdmirror.com/npm/@waline/client@2/dist/waline.min.js'))
         .then(({ init }) => {
           initFn = init || Waline.init
           initWaline(initFn, el, path)
