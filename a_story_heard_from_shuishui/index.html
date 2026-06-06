@@ -164,12 +164,12 @@
 <p><strong>最后更新：2026/01/16</strong></p>
 </blockquote>
 
-        <div id="aplayer-xUEmDDla" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-KfjBbbGx" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-xUEmDDla"),
+            element: document.getElementById("aplayer-KfjBbbGx"),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -297,8 +297,8 @@
   const loadWaline = (el, path) => {
     if (initFn) initWaline(initFn, el, path)
     else {
-      btf.getCSS('https://cdn.jsdmirror.com/npm/@waline/client@2/dist/waline.css')
-        .then(() => import('https://cdn.jsdmirror.com/npm/@waline/client@2/dist/waline.min.js'))
+      btf.getCSS('https://cdn.jsdmirror.com/npm/@waline/client/dist/waline.css')
+        .then(() => import('https://cdn.jsdmirror.com/npm/@waline/client/dist/waline.min.js'))
         .then(({ init }) => {
           initFn = init || Waline.init
           initWaline(initFn, el, path)

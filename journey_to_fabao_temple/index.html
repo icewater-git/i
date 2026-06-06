@@ -164,12 +164,12 @@
 <p>这是我听小雨讲的故事。</p>
 </blockquote>
 
-        <div id="aplayer-VWxMQycX" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-GAxfDzSh" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-VWxMQycX"),
+            element: document.getElementById("aplayer-GAxfDzSh"),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -241,8 +241,8 @@
   const loadWaline = (el, path) => {
     if (initFn) initWaline(initFn, el, path)
     else {
-      btf.getCSS('https://cdn.jsdmirror.com/npm/@waline/client@2/dist/waline.css')
-        .then(() => import('https://cdn.jsdmirror.com/npm/@waline/client@2/dist/waline.min.js'))
+      btf.getCSS('https://cdn.jsdmirror.com/npm/@waline/client/dist/waline.css')
+        .then(() => import('https://cdn.jsdmirror.com/npm/@waline/client/dist/waline.min.js'))
         .then(({ init }) => {
           initFn = init || Waline.init
           initWaline(initFn, el, path)
